@@ -1,0 +1,83 @@
+[
+    {
+        "date": "2023-10-23",
+        "day": "Monday",
+        "building": "Science Library",
+        "usage_kwh": 450,
+        "peak_hour": "14:00",
+        "occupancy_rate": "High",
+        "notes": "Regular semester day"
+    },
+    {
+        "date": "2023-10-23",
+        "day": "Monday",
+        "building": "Engineering Lab",
+        "usage_kwh": 820,
+        "peak_hour": "15:00",
+        "occupancy_rate": "High",
+        "notes": "Lab equipment running"
+    },
+    {
+        "date": "2023-10-23",
+        "day": "Monday",
+        "building": "Main Auditorium",
+        "usage_kwh": 120,
+        "peak_hour": "10:00",
+        "occupancy_rate": "Low",
+        "notes": "No events scheduled"
+    },
+    {
+        "date": "2023-10-24",
+        "day": "Tuesday",
+        "building": "Science Library",
+        "usage_kwh": 480,
+        "peak_hour": "16:00",
+        "occupancy_rate": "High",
+        "notes": "Study groups"
+    },
+    {
+        "date": "2023-10-24",
+        "day": "Tuesday",
+        "building": "Engineering Lab",
+        "usage_kwh": 790,
+        "peak_hour": "11:00",
+        "occupancy_rate": "High",
+        "notes": "Morning classes"
+    },
+    {
+        "date": "2023-10-25",
+        "day": "Wednesday",
+        "building": "Science Library",
+        "usage_kwh": 510,
+        "peak_hour": "14:00",
+        "occupancy_rate": "High",
+        "notes": "Mid-week peak"
+    },
+    {
+        "date": "2023-10-25",
+        "day": "Wednesday",
+        "building": "Student Center",
+        "usage_kwh": 600,
+        "peak_hour": "12:00",
+        "occupancy_rate": "Very High",
+        "notes": "Lunch rush"
+    },
+    {
+        "date": "2023-10-28",
+        "day": "Saturday",
+        "building": "Science Library",
+        "usage_kwh": 150,
+        "peak_hour": "14:00",
+        "occupancy_rate": "Low",
+        "notes": "Weekend"
+    },
+    {
+        "date": "2023-10-29",
+        "day": "Sunday",
+        "building": "Science Library",
+        "usage_kwh": 120,
+        "peak_hour": "15:00",
+        "occupancy_rate": "Low",
+        "notes": "Weekend"
+    }
+]

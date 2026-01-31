@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Energy Advisor</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for premium feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar / Dashboard Summary -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="logo-icon">🌱</div>
+                <h1>Energy<span class="highlight">Advisor</span></h1>
+            </div>
+            
+            <div class="stats-panel">
+                <h3>Campus Status</h3>
+                <div class="stat-card">
+                    <span class="label">Current Load</span>
+                    <span class="value">450 kWh</span>
+                    <span class="indicator safe">Normal</span>
+                </div>
+                <div class="stat-card">
+                    <span class="label">Efficiency</span>
+                    <span class="value">87%</span>
+                    <span class="indicator warning">Optimizable</span>
+                </div>
+            </div>
+
+            <div class="suggestions">
+                <h3>Quick Prompts</h3>
+                <button class="prompt-btn" onclick="sendQuickPrompt('What is the peak electricity usage?')">📈 Analyze Peak Usage</button>
+                <button class="prompt-btn" onclick="sendQuickPrompt('How can we reduce energy consumption?')">💡 Sustainability Tips</button>
+                <button class="prompt-btn" onclick="sendQuickPrompt('Compare weekend vs weekday usage')">📊 Compare Periods</button>
+            </div>
+            
+            <div class="system-info">
+                <p>Powered by <strong>IBM Granite</strong></p>
+                <p class="status">● System Online</p>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-interface">
+            <header class="chat-header">
+                <h2>Sustainability Assistant</h2>
+                <p>Ask about energy trends, anomalies, or green insights.</p>
+            </header>
+
+            <div class="chat-history" id="chatHistory">
+                <!-- Welcome Message -->
+                <div class="message ai-message">
+                    <div class="avatar">🤖</div>
+                    <div class="content">
+                        Hello! I am your <strong>Campus Energy Consumption Advisor</strong>. I have analyzed the latest campus electricity datasets. How can I help you improve sustainability today?
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <div class="input-wrapper">
+                    <input type="text" id="userInput" placeholder="Ask a question about energy data..." autocomplete="off">
+                    <button id="sendBtn" onclick="sendMessage()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
